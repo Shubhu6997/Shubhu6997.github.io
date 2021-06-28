@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Insert_Data.js"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        th {
+            padding: 20px;
+        }
+
+        table {
+            position: absolute;
+            right: 30%;
+            top: 10%;
+            padding: 50;
+
+        }
+
+        #InputData {
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="InputData">
+            <label>Name</label>
+            <input type="text" id="name" /><br><br>
+
+            <label>Age</label>
+            <input type="number" id="age" /><br><br>
+
+            <label>Email</label></td>
+            <input type="email" id="email"><br><br>
+
+            <button onclick="getDataAndInsert()">Submit</button>
+        </div></br></br>
+        <div id="ShowData">
+            <table id="ShowTable">
+                <tr id="HeaderRow">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
