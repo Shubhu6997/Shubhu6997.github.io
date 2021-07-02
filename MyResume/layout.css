@@ -1,0 +1,28 @@
+body {
+  border: 2px solid black;
+  margin: auto;
+  max-width: 800px;
+}
+#header {
+  text-align: center;
+}
+
+.details {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+img {
+  border-radius: 200px;
+  padding: 50px 50px;
+}
+#left_col {
+  width: 250px;
+  background-color: orange;
+}
+
+#right_col {
+  width: 450px;
+}
+.details {
+  padding: 5px 5px;
+}
