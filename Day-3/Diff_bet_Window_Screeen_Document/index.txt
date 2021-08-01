@@ -5,7 +5,7 @@
     d. This window object has the majority of the properties like length, innerWidth, innerHeight, name,
        if it has been closed, its parents, and more.
     e. Since window is the global object you can reference any properties of it with just the property name,
-       so you do not have to write down window. - it will be figured out by the runtime.
+       so you do not have to write down window it will be figured out by the runtime.
 
 2. Screen : 
     a. window.screen or just screen is a small information object about physical screen dimensions.
