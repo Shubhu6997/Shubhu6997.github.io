@@ -14,7 +14,7 @@ for (let i = 0; i < obj.length; i++) {
 
 console.log("*****Using for in loop*****");
 for(let i in obj){
-        console.log(i+":"+obj[i]);
+        console.log(i+" : "+obj[i]);
 }
 
 console.log("*****Using for of loop*****");

@@ -16,7 +16,7 @@ var resume_data = {
             Country : "India"
         }
     },
-    Professional_Experience : "Working as SRE to creating automations for customer issues and incident using Python, Shell Scripting, SQL and JSON.",
+    Professional_Experience : "Working as SRE to creating automations for customer issues and incident using Python, Shell Scripting, SQL and JSON",
     Projects : ["Created Flows to handle end to end incidents without manual intervention",
     "To get start up logs of application servers via mail"],
     Education : {
