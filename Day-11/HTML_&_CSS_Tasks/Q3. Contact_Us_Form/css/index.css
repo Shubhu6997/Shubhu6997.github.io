@@ -1,0 +1,31 @@
+#container{
+    background-color:dodgerblue;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;   
+   
+}
+
+h1, h3{
+    color: white; 
+}
+
+input{
+    width: 500px;
+    height: 30px;
+}
+textarea{
+    width: 500px;
+    height: 70px;
+}
+#submit_button{
+    width: 100px;
+    justify-content: center;
+    background-color:dimgrey;
+    color: white;
+}

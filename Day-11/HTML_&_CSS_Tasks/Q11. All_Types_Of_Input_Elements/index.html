@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            background-color: darkslateblue;
+        }
+        h1, label{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Sample form of Input types in HTML</h1>
+        <form >
+            <input type="text" name="Name" placeholder="Name"> 
+            <input type="email" name="Email" placeholder="Email-ID"><br></br>
+            <input type="password" name = "Password" placeholder="Password">
+            <input type="number" placeholder="Age"><br><br>
+            <input type="radio" id="male"><label for="male">Male</label>
+            <input type="radio" id="female"><label for="female">Female</label><br><br>
+            <input type="tel" placeholder="Phone Number(10 Digits)" pattern="[0-9]{10}"><br><br>
+            <input type="checkbox" id = "ReactJs"><label for="ReactJs">
+            <label>ReactJs</label><br><br>
+            <input type="checkbox" id = "AngularJs"><label for="AngularJs">
+            <label>AngularJs</label><br><br>
+            <label>Rate yourself in above seleted technologies</label><br>
+            <input type="range"><br><br>
+            <label for="birthdate">BirthDate </label><input type="date" id = "birthdate"><br><br>
+            <label>Month of Joining </label><input type="month"><br><br>
+            <label>Week Of Joining </label><input type="week"><br><br>
+            <input type="file"><br><br>
+            <input type="reset">
+            <input type="submit">
+            <input type="image" src="img/nextIcon.png" width="30px" height="30px"><br><br>
+        </form>
+    </div>
+</body>
+</html>
