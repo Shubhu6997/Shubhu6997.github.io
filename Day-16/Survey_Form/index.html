@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Servey Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='layout.css'>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div id="name" class="fields">
+                <label for="name">Name</label><br>
+                <input type="text" id="firstname" placeholder="firstname"><input type="text" id="lastname" placeholder="lastname" required>
+            <div>
+            <div id = "email" class="fields">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required>
+            </div>
+            <br><br>
+            <div id="exp" class="fields">
+                    <label>Your Experience</label>
+                    <input type="range" id="rating" required>
+                </div>
+                <br><br> 
+            <div id="tb1" class="fields">
+                <label for="table1">How satisfied are you with?</label>
+                <table id = "table1">
+                    <tr>
+                        <td></td>
+                        <th>Very Unsatisfied</th>
+                        <th>Unsatisfied</th>
+                        <th>Neutral</th>
+                        <th>Satisfied</th>
+                        <th>Very Satisfied</th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="headerRow">Purchase</th>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="headerRow">Service</th>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="headerRow">Company Overall</th>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tb2" class="fields">
+                <label for="table2">How likely are you to?</label>
+                <table id = "table2">
+                    <tr>
+                        <td></td>
+                        <th>Very Likely</th>
+                        <th>Unlikely</th>
+                        <th>Neutral</th>
+                        <th>Likely</th>
+                        <th>Very Likely</th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="headerRow">Buy from us again</th>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="headerRow">Recommend our product to others</th>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="headerRow">Recommend our company to others</th>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                        <td><input type="radio" required></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div id="comments" class="fields">
+                <label for="comments">Additional comments of suggestions</label><br>
+                <textarea rows="5" cols="90"></textarea><br><br>
+            </div>
+            <input type="submit" id="submitButton">
+        </form>
+    </div>
+</body>
+</html>
