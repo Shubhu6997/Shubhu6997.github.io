@@ -1,0 +1,21 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.container {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px 1px grey;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 10px;
+}
