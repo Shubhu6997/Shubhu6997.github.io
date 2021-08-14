@@ -8,24 +8,22 @@
     <link rel='stylesheet' type='text/css' href='layout.css'>
 </head>
 <body>
+    <div class="container">
         <form>
             <div id="name" class="fields">
                 <label for="name">Name</label><br>
                 <input type="text" id="firstname" placeholder="firstname"><input type="text" id="lastname" placeholder="lastname" required>
             <div>
-            
             <div id = "email" class="fields">
                 <label for="email">Email</label><br>
                 <input type="email" id="email" required>
             </div>
             <br><br>
-        
             <div id="exp" class="fields">
                     <label>Your Experience</label>
                     <input type="range" id="rating" required>
                 </div>
-                <br><br>
-                
+                <br><br> 
             <div id="tb1" class="fields">
                 <label for="table1">How satisfied are you with?</label>
                 <table id = "table1">
@@ -63,7 +61,6 @@
                     </tr>
                 </table>
             </div>
-
             <div id="tb2" class="fields">
                 <label for="table2">How likely are you to?</label>
                 <table id = "table2">
@@ -102,16 +99,12 @@
                 </table>
             </div>
             <br>
-
             <div id="comments" class="fields">
                 <label for="comments">Additional comments of suggestions</label><br>
                 <textarea rows="5" cols="90"></textarea><br><br>
             </div>
-
             <input type="submit" id="submitButton">
-
-
         </form>
-    
+    </div>
 </body>
 </html>

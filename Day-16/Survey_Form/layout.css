@@ -1,8 +1,12 @@
 body {
+  background-color: whitesmoke;
+}
+.container {
   margin: auto;
   max-width: 650px;
   padding: 10px;
   border: 1px solid black;
+  background-color: white;
 }
 .fields {
   margin-top: 20px;
