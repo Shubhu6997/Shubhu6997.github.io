@@ -1,8 +1,16 @@
 body {
-  border: 2px solid black;
-  margin: auto;
-  max-width: 800px;
+  background-color: whitesmoke;
 }
+.container {
+  max-width: 800px;
+  border: 2px solid black;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
 #header {
   text-align: center;
 }
@@ -22,7 +30,8 @@ img {
 
 #right_col {
   width: 450px;
+  background-color: rgb(6, 8, 8);
 }
 .details {
-  padding: 5px 5px;
+  padding: 5px;
 }
