@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation with Forms</title>
+    <link rel = "stylesheet" href="layout.css">
+</head>
+
+<body>
+    <div class = "container">
+        <div id="InputData">
+            <form id="myForm">
+                <label>First Name</label>
+                <input type="text" id="firstname"/><br><br>
+
+                <label>Last Name</label>
+                <input type="text" id="lastname"/><br><br>
+
+                <label>Address</label><br>
+                <textarea id="address" rows="5" cols="50"></textarea><br>
+
+                <label>Pin Code</label>
+                <input type="text" id="pincode" /><br><br>
+
+                <label>Gender</label><br>
+               <input type="radio" name="Gender" id="male" value="Male" /><label for="male">Male</label>
+               <input type="radio" name="Gender" id="female" value="Female" /><label for="female">Female</labe>
+                <br><br>
+
+                <label for="food">Choice Of Food(Select Atleast Two)</label><br>
+                <input type="checkbox" id="Icecream" name= "Icecream" value="Icecream">
+                <label for="Icecream">Icecream</label><br>
+
+                <input type="checkbox" id="MilkShake" name= "MilkShake" value="MilkShake">
+                <label for="MilkShake">MilkShake</label><br>
+
+                <input type="checkbox" id="Pizza" name= "Pizza" value="Pizza">
+                <label for="Pizza">Pizza</label><br>
+
+                <input type="checkbox" id="Burger" name= "Burger" value="Burger">
+                <label for="Burger">Burger</label><br>
+
+                <input type="checkbox" id="Panipuri" name= "Panipuri" value="Panipuri">
+                <label for="Panipuri">Panipuri</label><br><br>
+
+                <label for="state">State</label>
+                <input type="text" id="state"><br><br>
+
+                <label for="country">Country</label>
+                <input type="text" id="country"><br><br>
+            
+                <button onclick="insertIntoTable()">Submit</button>
+            </form>
+            
+        </div></br></br>
+        <div id="ShowData">
+            <table id="ShowTable">
+                <tr id="HeaderRow">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Pin code</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
