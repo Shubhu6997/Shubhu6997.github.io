@@ -16,21 +16,33 @@ async function deleteUser(id){
 
 }
 
-//let userName = document.getElementById("name").value;
 async function addUser(){
-   const data =  await fetch("https://611f26c39771bf001785c78f.mockapi.io/users",
+   const data = await fetch("https://611f26c39771bf001785c78f.mockapi.io/users",
     {method: "POST",
-        header:{
+        headers:{
             "Content-Type" : "application/json"
         },
         body: JSON.stringify({
-            name : "shubhu",
-            avatar : "https://cdn.fakercloud.com/avatars/webtanya_128.jpg",
-            createdAt : new Date().toISOString() 
+            name : document.getElementById("name").value,
+            avatar : document.getElementById("avatar").value
         })
     });
     const userdata = await data.json();
-    console.log(userdata);
+   // console.log(userdata);
+    getUsersdata();
+}
+
+async function updateUser(id){
+    const data = await fetch(`https://611f26c39771bf001785c78f.mockapi.io/users/${id}`,
+    {method: "PUT",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: document.getElementById("name").value,
+            avatar: document.getElementById("avatar").value
+        })
+    });
     getUsersdata();
 }
 
@@ -45,6 +57,7 @@ function CreateUsersdata({avatar, name, createdAt, id}){
                 <p><b>${name}<b></p>
                 <p>${new Date(createdAt).toDateString()}</p>
                 <button onclick = "deleteUser(${id})">Delete</button>
+                <button onclick = "updateUser(${id})">Update</button>
             </div>`
     document.querySelector(".userList").append(container);
 }
