@@ -13,7 +13,7 @@ main_container.append(titles);
 
 async function getMakeUpAPIDetails() {
     try {
-        const data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json", {
+        const data = await fetch("https://makeup-api.herokuapp.com/api/v1/products.json", {
             method: "GET"
         });
         const apidata = await data.json();
