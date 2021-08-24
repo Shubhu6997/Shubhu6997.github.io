@@ -12,13 +12,17 @@ main_container.append(titles);
 
 
 async function getMakeUpAPIDetails() {
-
-    const data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json", {
-        method: "GET"
-    });
-
-    const apidata = await data.json();
-    apidata.forEach((product) => createProduct(product));
+    try {
+        const data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json", {
+            method: "GET"
+        });
+        const apidata = await data.json();
+        console.log(apidata);
+        apidata.forEach((product) => createProduct(product));
+    } catch (error) {
+        //alert(error);
+        console.log(error);
+    }
 }
 
 getMakeUpAPIDetails();
